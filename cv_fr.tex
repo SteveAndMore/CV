@@ -1,0 +1,172 @@
+%------------------------- 
+% Resume in Latex
+% Author : Steve Suissa
+% Based off of: Jake's Resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Steve Suissa} \\ \vspace{1pt}
+    Île-de-France, France $|$
+    +33 7 81 79 71 44 $|$
+    \href{mailto:stevesuissapro@gmail.com}{stevesuissapro@gmail.com} \\
+    \href{https://linkedin.com/in/steve-suissa}{linkedin.com/in/steve-suissa} $|$
+    \href{https://github.com/SteveAndMore}{github.com/SteveAndMore}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Profil}
+\small{
+Ingénieur Machine Learning spécialisé en vision par ordinateur, OCR, LLMs et compréhension documentaire par IA. Expérience dans le développement de solutions IA en production avec Python, C++, TensorFlow et PyTorch. Expertise en recherche appliquée et déploiement scalable.
+}
+
+%-----------EXPERIENCE-----------
+\section{Expérience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Groupe Covéa}{Paris, France}
+      {Ingénieur Machine Learning}{Sep. 2024 -- Présent}
+      \resumeItemListStart
+        \resumeItem{Pilotage du projet d’anonymisation par IA de Covéa de la phase d’expérimentation jusqu’à la préparation à la mise en production en tant qu’Application Owner, avec validation utilisateur et approbation de la direction.}
+        \resumeItem{Réalisation de plusieurs expérimentations OCR-LLM RAD/LAD pour GMF, MAAF et des entités affiliées, fournissant des métriques de performance exploitables pour les décisions de mise en production.}
+        \resumeItem{Renforcement des compétences full-stack grâce à des formations Angular et Java Web Services, permettant le développement et le déploiement de solutions IA internes.}
+        \resumeItem{Encadrement d’étudiants ingénieurs de Télécom Paris et EPITA sur des projets IA de pointe ainsi que supervision d’un alternant sur les sujets RAD/LAD.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Groupe Covéa}{Paris, France}
+      {Stagiaire Ingénieur Machine Learning}{Fév. 2024 -- Juil. 2024}
+      \resumeItemListStart
+        \resumeItem{Développement de solutions avancées de compréhension documentaire pour extraire des informations structurées à partir de documents très variés incluant tableaux, signatures, images et paires clé-valeur.}
+        \resumeItem{Conception de pipelines scalables et prêts pour la production dans des environnements Azure Databricks pour une intégration en entreprise.}
+        \resumeItem{Recherche sur les techniques émergentes en NLP, traitement d’image et deep learning afin d’améliorer les capacités OCR et l’extraction d’informations.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bandai Namco}{Tokyo, Japon}
+      {Ingénieur R\&D}{Sep. 2022 -- Jan. 2023}
+      \resumeItemListStart
+        \resumeItem{Contribution à des projets de R\&D dans un environnement de production de jeux vidéo AAA à rythme soutenu.}
+        \resumeItem{Développement d’une preuve de concept de jeu de tir à la troisième personne en 4D utilisant Unreal Engine 5 et la technologie Nanite pour un rendu 4K haute performance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fnac}{Paris, France}
+      {Conseiller et Vendeur}{Juil. 2021 -- Août 2021}
+      \resumeItemListStart
+        \resumeItem{Reconnu pour la satisfaction client, le professionnalisme et les performances commerciales.}
+        \resumeItem{Conseil aux clients sur les produits et promotion de services complémentaires incluant assurances et garanties.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Formation}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {EPITA School of Engineering and Computer Science}{Le Kremlin-Bicêtre, France}
+      {Diplôme d’ingénieur en informatique -- Mineure Traitement d’Image et IA}{2024}
+      \resumeItemListStart
+        \resumeItem{Projet de recherche axé sur la segmentation d’images médicales par deep learning pour la détection de tumeurs cérébrales via la prédiction d’incertitude et des architectures neuronales avancées.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------INVOLVEMENT-----------
+\section{Leadership \& Engagement}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sup'BioDance}{Villejuif, France}
+      {Trésorier et Responsable Technique}{Jan. 2022 -- Jan. 2025}
+      \resumeItemListStart
+        \resumeItem{Gestion du budget, du matériel et de la logistique opérationnelle de l’association.}
+        \resumeItem{Pilotage des opérations son, lumière et informatique lors des événements et activités.}
+        \resumeItem{Conception et développement d’une API REST sécurisée utilisant Java Web Services pour une plateforme de vote utilisée par plus de 100 utilisateurs.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Compétences}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Langages de programmation}{: Python, C++, Java} \\
+     \textbf{Machine Learning}{: TensorFlow, PyTorch, Vision par ordinateur, OCR, LLMs} \\
+     \textbf{Outils \& Plateformes}{: Azure Databricks, Unreal Engine 5, Angular, Java Web Services} \\
+     \textbf{Langues}{: Français (natif), Anglais (courant -- TOEIC 940/990)}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
