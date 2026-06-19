@@ -1,6 +1,6 @@
 # Steve Suissa
 
-Machine Learning Engineer specialized in computer vision, OCR, LLMs, and AI-driven document understanding.
+Machine Learning Engineer specialized in computer vision, OCR, Small/Large Language Models, and AI/ML-driven document understanding.
 
 📍 Île-de-France, France
 📧 [stevesuissapro@gmail.com](mailto:stevesuissapro@gmail.com)
